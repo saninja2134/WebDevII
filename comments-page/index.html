@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Sets the title of the webpage-->
+  <title>Form Page</title>
+
+  <!--Links the stylesheet for the webpage-->
+  <link rel="stylesheet" href="../universal/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Links the Font Awesome stylesheet for icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <script src="../site-navigation/js/htmlLoader.js"></script>
+  <script defer src="../universal/js/script.js"></script>
+  <script defer src="js/script.js"></script>
+
+</head>
+
+<body>
+  <!-- Cursor Fun -->
+  <div id="cursor-circle"></div>
+  <!-- Header -->
+  <div w3-include-html="../site-navigation/index.html"></div>
+  <!-- Main -->
+  <form action="mailto:w1947805@my.westminster.ac.uk?subject=Feedback%20on%20my%20music%20website" method="post" enctype="text/plain">
+    <h2>User Feedback</h2>
+    <div rating-radio-group>
+      <label for="scoring">1. On a scale of 1-10, how would you rate your overall experience on our website?</label>
+      <div class="rating">
+        <input type="radio" id="rating1" name="scoring" value="1"  checked="checked" required>
+        <label for="rating1">1</label>
+        <input type="radio" id="rating2" name="scoring" value="2">
+        <label for="rating2">2</label>
+        <input type="radio" id="rating3" name="scoring" value="3">
+        <label for="rating3">3</label>
+        <input type="radio" id="rating4" name="scoring" value="4">
+        <label for="rating4">4</label>
+        <input type="radio" id="rating5" name="scoring" value="5">
+        <label for="rating5">5</label>
+        <input type="radio" id="rating6" name="scoring" value="6">
+        <label for="rating6">6</label>
+        <input type="radio" id="rating7" name="scoring" value="7">
+        <label for="rating7">7</label>
+        <input type="radio" id="rating8" name="scoring" value="8">
+        <label for="rating8">8</label>
+        <input type="radio" id="rating9" name="scoring" value="9">
+        <label for="rating9">9</label>
+        <input type="radio" id="rating10" name="scoring" value="10">
+        <label for="rating10">10</label>
+      </div>
+    </div>
+    <div>
+      <label for="reasoning">2. Please could you tell us the reasoning behind your rating?</label>
+      <textarea id="reasoning" name="reasoning" required></textarea>
+    </div>
+    <div id="find-radio-group">
+      <label for="find">3. Were you able to find what you were looking for on our website?</label>
+      <input type="radio" id="yes" name="find" value="Yes" required>
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="find" value="No">
+      <label for="no">No</label>
+    </div>
+    <div>
+      <label for="opinion">4. Is there anything that you particularly liked or disliked about our website?</label>
+      <select id="opinion" name="opinion" required>
+        <option value="">Select an option</option>
+        <optgroup label="Liked">
+          <option value="design+">I liked the design</option>
+          <option value="content+">I liked the content</option>
+          <option value="performance+">I liked the performance</option>
+          <option value="functionality+">I liked the functionality</option>
+          <option value="price+">I liked the price</option>
+          <option value="customer-service+">I liked the customer service</option>
+        </optgroup>
+        <optgroup label="Disliked">
+          <option value="dislike navigation-">I disliked the navigation</option>
+          <option value="loading-time-">I disliked the loading time</option>
+          <option value="content-">I disliked the content</option>
+          <option value="design-">I disliked the design</option>
+          <option value="price-">I disliked the price</option>
+          <option value="customer-service-">I disliked the customer service</option>
+        </optgroup>
+      </select>
+    </div>
+    <div>
+      <label for="improvements">5. What specific improvements or changes would you suggest to make our website
+        better?</label>
+      <select id="improvements" name="improvements" required>
+        <option value="">Select an option</option>
+        <option value="content">Add more relevant content</option>
+        <option value="mobile-friendly">Make the website more mobile-friendly</option>
+        <option value="layout">Improve the website layout</option>
+        <option value="accessibility">Make the website more accessible</option>
+        <option value="performance">Improve website performance</option>
+        <option value="specific">Other (please specify in the box below)</option>
+      </select>
+      <input type="text" id="specific" name="specific" style="display: none;">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  <footer><a href="../page-editor/index.html">page editor</a></footer>
+</body>
+
+</html>
